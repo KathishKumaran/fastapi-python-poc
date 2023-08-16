@@ -51,6 +51,7 @@ async def login(user_login: UserLogin, request: Request, db: Session = Depends(g
         # access_token_expires = datetime.timedelta(minutes=30)
         # access_token = create_access_token(data={"sub": user.email}, expires_delta=access_token_expires)
 
+        # For no expiration
         access_token = create_access_token(data={"sub": user.email})
 
         # Update user information

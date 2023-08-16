@@ -3,3 +3,6 @@ alembic.ini
 venv
 settings.py
 seed_data
+__pycache__
+auth/__pycache__
+models/__pycache__
